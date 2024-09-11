@@ -3,8 +3,9 @@ body {
 	margin: auto;
 }
 * {
-	font-family: 'Inter';
+	font-family: 'Inter', 'Arial';
 	font-style: normal;
+	
 }
 .top-header {
 	background-color: white;
@@ -38,6 +39,11 @@ body {
 	color: #000
 }
 
+.ul li img {
+	width: 20px;
+	height: 20px;
+}
+
 .social-link img {
 	width: 20px;
 }
@@ -69,11 +75,12 @@ body {
 
 .picture img {
 	width: 100%;
-
 }
+
 #about-me {
 	flex: 2
 }
+
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
@@ -101,13 +108,18 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #333;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
 .nav-pills .nav-link {
 	color: #000
 }
+
+.nav li {
+	cursor: pointer;
+}
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
@@ -242,6 +254,15 @@ form textarea {
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
+}
+
+.visually-hidden {
+    color: #000; /* Texte en noir */
+    background-color: #fff; /* Fond blanc */
+    opacity: 1; /* Rendre visible */
+    padding: 5px 10px; /* Espacement interne pour que le bouton soit plus visible */
+    border: 1px solid #000; /* Optionnel : Ajoute une bordure noire pour rendre les boutons plus clairs */
+    border-radius: 3px; /* Optionnel : Arrondit légèrement les coins */
 }
 
 @media all and (max-width: 1180px) {
